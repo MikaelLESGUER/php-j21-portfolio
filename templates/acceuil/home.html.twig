@@ -1,0 +1,22 @@
+{#<h1>{{ title }}</h1>#}
+
+{#{% if age > 18 %}#}
+{#    <p>Tu es majeur</p>#}
+{#{% else %}#}
+{#    <p>Tu es mineur</p>#}
+{#{% endif %}#}
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Bienvienue a vous sur mon portfolio</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci alias, aliquam at dignissimos eaque eos est hic
+        illo labore libero minus, natus nihil numquam, officia omnis pariatur perspiciatis possimus quam quas recusandae
+        repellendus saepe sit tempore temporibus voluptate voluptatem?</p>
+    <p>Accusamus atque cumque earum, et eum in
+        incidunt ipsam minima nam nemo neque nisi odio placeat possimus quos, repellendus rerum sapiente sed soluta suscipit
+        tempora ullam voluptas! Alias, aliquam, deleniti dicta dolorum magni odio pariatur quod repellat similique voluptate
+        voluptates?</p>
+
+{% endblock %}

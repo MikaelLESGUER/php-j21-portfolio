@@ -9,12 +9,36 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>A Propos </h1>
 
-    This friendly message is coming from:
-    <ul>
-        <li>Your controller at <code><a href="{{ 'D:/Users/MikeDev/Documents/3wa/exercice/PHP/php-j21-portfolio/res04-php-j21-portfolio/src/Controller/AcceuilController.php'|file_link(0) }}">src/Controller/AcceuilController.php</a></code></li>
-        <li>Your template at <code><a href="{{ 'D:/Users/MikeDev/Documents/3wa/exercice/PHP/php-j21-portfolio/res04-php-j21-portfolio/templates/acceuil/index.html.twig'|file_link(0) }}">templates/acceuil/index.html.twig</a></code></li>
-    </ul>
+{#    article>h2{Titre de l'article}+div.metadata{ecrit le 10/05/2023 a 15h25 dans la catégorie Politique}+div.content>img+(p>lorem15)*2+a.btn.btn-primary{lire la suite}#}
+    <article>
+        <h2>Titre de l'article</h2>
+        <div class="metadata">ecrit le 10/05/2023 a 15h25 dans la catégorie Politique</div>
+        <div class="content"><img src="http://placehold.it/350x150" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At error excepturi pariatur similique. Ad,
+                vitae.</p>
+            <p>Accusantium alias amet atque commodi deserunt doloremque, ducimus impedit laborum neque, quibusdam quo
+                saepe voluptas?</p><a href="{{ path('blog_show') }}" class="btn btn-primary">lire la suite</a></div>
+    </article>
+    <article>
+        <h2>Titre de l'article</h2>
+        <div class="metadata">ecrit le 10/05/2023 a 15h25 dans la catégorie Politique</div>
+        <div class="content"><img src="http://placehold.it/350x150" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto commodi doloremque in neque odit
+                sapiente?</p>
+            <p>Animi distinctio ipsa porro qui reprehenderit! Ex facere nulla repellat. Ab impedit similique tenetur
+                unde!</p>
+            <a href="{{ path('blog_show') }}" class="btn btn-primary">lire la suite</a></div>
+    </article>
+    <article>
+        <h2>Titre de l'article</h2>
+        <div class="metadata">ecrit le 10/05/2023 a 15h25 dans la catégorie Politique</div>
+        <div class="content"><img src="http://placehold.it/350x150" alt="">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nobis reiciendis repudiandae sequi ullam,
+                voluptatem.</p>
+            <p>A aliquam asperiores esse hic, illo quos veritatis? A adipisci beatae dicta quia sint voluptatem?</p>
+            <a href="{{ path('blog_show') }}" class="btn btn-primary">lire la suite</a></div>
+    </article>
 </div>
 {% endblock %}
